@@ -1,0 +1,59 @@
+<export>
+    <info>
+        <creator>Admin</creator>
+        <opencms_version>10.0.1</opencms_version>
+        <createdate>${createdate}</createdate>
+        <infoproject>Offline</infoproject>
+        <export_version>10</export_version>
+    </info>
+    <module>
+        <name>de.zebrajaeger.opencms.example</name>
+        <nicename><![CDATA[de.zebrajaeger OpenCms Basis Templates]]></nicename>
+        <group>de.zebrajaeger</group>
+        <class>de.zebrajaeger.opencms.example.ActionClass</class>
+        <export-mode name="default"/>
+        <description/>
+        <version>${moduleversion}</version>
+        <authorname><![CDATA[Lars Brandt]]></authorname>
+        <authoremail><![CDATA[zebrajaeger@zebrajaeger.de]]></authoremail>
+        <datecreated/>
+        <userinstalled/>
+        <dateinstalled/>
+        <dependencies/>
+        <exportpoints>
+            <exportpoint uri="/system/modules/de.zebrajaeger.opencms.example/META-INF/main.tld" destination="WEB-INF/main.tld"/>
+            <exportpoint uri="/system/modules/de.zebrajaeger.opencms.example/META-INF/tags/" destination="META-INF/tags/"/>
+            <exportpoint uri="/system/modules/de.zebrajaeger.opencms.example/lib/" destination="WEB-INF/lib/"/>
+        </exportpoints>
+        <resources>
+            <resource uri="/system/modules/de.zebrajaeger.opencms.example/"/>
+            <resource uri="/system/workplace/resources/filetypes/zj-default.png"/>
+            <resource uri="/system/workplace/resources/filetypes/zj-default-big.png"/>
+        </resources>
+        <excluderesources/>
+        <parameters/>
+        <resourcetypes>
+            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="headline" id="100000">
+                <param name="schema">/system/modules/de.zebrajaeger.opencms.example/headline/headline.xsd</param>
+            </type>
+            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="text" id="100001">
+                <param name="schema">/system/modules/de.zebrajaeger.opencms.example/text/text.xsd</param>
+            </type>
+            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="image" id="100002">
+                <param name="schema">/system/modules/de.zebrajaeger.opencms.example/image/image.xsd</param>
+            </type>
+        </resourcetypes>
+        <explorertypes>
+            <explorertype name="headline" key="fileicon.headline" icon="zj-default.png" bigicon="zj-default-big.png" reference="xmlcontent">
+                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=headline" order="10" autosetnavigation="false" autosettitle="false" info="desc.headline" key="title.headline"/>
+            </explorertype>
+            <explorertype name="text" key="fileicon.text" icon="zj-default.png" bigicon="zj-default-big.png" reference="xmlcontent">
+                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=text" order="10" autosetnavigation="false" autosettitle="false" info="desc.text" key="title.text"/>
+            </explorertype>
+            <explorertype name="headline" key="fileicon.image" icon="zj-default.png" bigicon="zj-default-big.png" reference="xmlcontent">
+                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=image" order="10" autosetnavigation="false" autosettitle="false" info="desc.image" key="title.image"/>
+            </explorertype>
+        </explorertypes>
+    </module>
+    <files/>
+</export>

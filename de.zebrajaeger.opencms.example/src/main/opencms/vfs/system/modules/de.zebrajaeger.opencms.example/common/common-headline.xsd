@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+
+    <xsd:element name="CommonHeadlines" type="OpenCmsCommonHeadlines"/>
+
+    <xsd:complexType name="OpenCmsCommonHeadlines">
+        <xsd:sequence>
+            <xsd:element name="CommonHeadline" type="OpenCmsCommonHeadline" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="OpenCmsCommonHeadline">
+        <xsd:sequence>
+            <xsd:element name="Type" type="OpenCmsString"/>
+            <xsd:element name="Text" type="OpenCmsString"/>
+        </xsd:sequence>
+        <xsd:attribute name="language" type="OpenCmsLocale" use="optional"/>
+    </xsd:complexType>
+
+    <xsd:annotation>
+        <xsd:appinfo>
+            <resourcebundles>
+                <propertybundle name="de.zebrajaeger.opencms.example.workplace"/>
+            </resourcebundles>
+            <layouts>
+                <layout element="Type" widget="SelectorWidget" configuration="H1|H2*|H3"/>
+            </layouts>
+            <validationrules>
+                <rule element="Text" regex="!^\s*$" message="${key.error.empty}"/>
+                <rule element="Type" regex="!^\s*$" message="${key.error.empty}"/>
+            </validationrules>
+            <relations/>
+            <searchsettings containerPageOnly="true">
+                <searchsetting element="Type" searchcontent="false"/>
+            </searchsettings>
+        </xsd:appinfo>
+    </xsd:annotation>
+
+</xsd:schema>

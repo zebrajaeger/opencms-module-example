@@ -1,0 +1,18 @@
+<fileinfo>
+    <file>
+        <source>${source}</source>
+        <destination>${destination}</destination>
+        <type>xmlvfsbundle</type>
+        <uuidstructure>caeef11e-bd57-11e6-a57f-8cdcd4d49146</uuidstructure>
+        <uuidresource>caeef11f-bd57-11e6-a57f-8cdcd4d49146</uuidresource>
+        <datelastmodified>${datelastmodified}</datelastmodified>
+        <userlastmodified>Admin</userlastmodified>
+        <datecreated>${datecreated}</datecreated>
+        <usercreated>Admin</usercreated>
+        <flags>0</flags>
+        <properties/>
+        <relations/>
+        <accesscontrol/>
+    </file>
+    <siblingcount>1</siblingcount>
+</fileinfo>

@@ -1,0 +1,13 @@
+<file>
+	<destination>${destination}</destination>
+	<type>folder</type>
+	<uuidstructure>49439218-b89d-11e6-aa28-8cdcd4d49146</uuidstructure>
+	<datelastmodified>${datelastmodified}</datelastmodified>
+	<userlastmodified>Admin</userlastmodified>
+	<datecreated>${datecreated}</datecreated>
+	<usercreated>Admin</usercreated>
+	<flags>0</flags>
+	<properties/>
+	<relations/>
+	<accesscontrol/>
+</file>

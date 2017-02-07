@@ -1,0 +1,34 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+
+    <xsd:element name="Images" type="OpenCmsTexts"/>
+
+    <xsd:complexType name="OpenCmsTexts">
+        <xsd:sequence>
+            <xsd:element name="Text" type="OpenCmsText" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="Text">
+        <xsd:sequence>
+            <xsd:element name="Title" type="OpenCmsString"/>
+            <xsd:element name="Text" type="OpenCmsHtml"/>
+        </xsd:sequence>
+        <xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
+    </xsd:complexType>
+
+    <xsd:annotation>
+        <xsd:appinfo>
+            <resourcebundles>
+                <propertybundle name="de.zebrajaeger.opencms.example.text"/>
+            </resourcebundles>
+            <mappings>
+                <mapping element="Title" mapto="property:Title" />
+                <mapping element="Title" mapto="urlName" />
+            </mappings>
+            <searchsettings containerPageOnly="true"/>
+        </xsd:appinfo>
+    </xsd:annotation>
+
+</xsd:schema>

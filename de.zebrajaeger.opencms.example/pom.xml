@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.zebrajaeger</groupId>
+        <artifactId>opencms-module-example-root</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>de.zebrajaeger.opencms.example</artifactId>
+    <packaging>opencms-module</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>de.zebrajaeger OpenCms example module</name>
+
+    <properties>
+        <project.parent.basedir>..</project.parent.basedir>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- used to install dependencies in local tomcat -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <id>install-dependencies</id>
+                            <phase>install</phase>
+                            <goals>
+                                <goal>copy-dependencies</goal>
+                            </goals>
+                            <configuration>
+                                <excludeTransitive>false</excludeTransitive>
+                                <includeScope>runtime</includeScope>
+                                <outputDirectory>${opencms.webapp.home}/WEB-INF/lib</outputDirectory>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>pl.project13.maven</groupId>
+                <artifactId>git-commit-id-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>de.zebrajaeger</groupId>
+                <artifactId>opencms-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <moduleName>${project.artifactId}</moduleName>
+                    <manifestMetaDir>${project.basedir}/src/main/opencms/manifest</manifestMetaDir>
+                    <vfsRoot>${project.basedir}/src/main/opencms/vfs</vfsRoot>
+                    <replaceMetaVariables>true</replaceMetaVariables>
+                    <addDependencies>true</addDependencies>
+                    <addClasses>false</addClasses>
+                    <failOnMissingResource>true</failOnMissingResource>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.opencms</groupId>
+            <artifactId>opencms-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.opencms</groupId>
+            <artifactId>opencms-gwt</artifactId>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>develop</id>
+
+            <dependencies>
+                <dependency>
+                    <groupId>de.zebrajaeger</groupId>
+                    <artifactId>de.zebrajaeger.opencms.example</artifactId>
+                    <version>${project.version}</version>
+                </dependency>
+            </dependencies>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                    </plugin>
+                    <plugin>
+                        <groupId>de.silpion.opencms.maven.plugins</groupId>
+                        <artifactId>cmsshell-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
