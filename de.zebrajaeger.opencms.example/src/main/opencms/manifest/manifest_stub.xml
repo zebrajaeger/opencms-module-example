@@ -21,37 +21,37 @@
         <dateinstalled/>
         <dependencies/>
         <exportpoints>
-            <exportpoint uri="/system/modules/de.zebrajaeger.opencms.example/META-INF/main.tld" destination="WEB-INF/main.tld"/>
+            <exportpoint uri="/system/modules/de.zebrajaeger.opencms.example/META-INF/zj.tld" destination="WEB-INF/zj.tld"/>
             <exportpoint uri="/system/modules/de.zebrajaeger.opencms.example/META-INF/tags/" destination="META-INF/tags/"/>
             <exportpoint uri="/system/modules/de.zebrajaeger.opencms.example/lib/" destination="WEB-INF/lib/"/>
         </exportpoints>
         <resources>
             <resource uri="/system/modules/de.zebrajaeger.opencms.example/"/>
-            <resource uri="/system/workplace/resources/filetypes/zj-default.png"/>
-            <resource uri="/system/workplace/resources/filetypes/zj-default-big.png"/>
+            <resource uri="/system/workplace/resources/filetypes/zj-default.jpg"/>
+            <resource uri="/system/workplace/resources/filetypes/zj-default-big.jpg"/>
         </resources>
         <excluderesources/>
         <parameters/>
         <resourcetypes>
-            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="headline" id="100000">
-                <param name="schema">/system/modules/de.zebrajaeger.opencms.example/headline/headline.xsd</param>
+            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="zj-headline" id="100000">
+                <param name="schema">/system/modules/de.zebrajaeger.opencms.example/zj-headline/zj-headline.xsd</param>
             </type>
-            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="text" id="100001">
-                <param name="schema">/system/modules/de.zebrajaeger.opencms.example/text/text.xsd</param>
+            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="zj-text" id="100001">
+                <param name="schema">/system/modules/de.zebrajaeger.opencms.example/zj-text/zj-text.xsd</param>
             </type>
-            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="image" id="100002">
-                <param name="schema">/system/modules/de.zebrajaeger.opencms.example/image/image.xsd</param>
+            <type class="org.opencms.file.types.CmsResourceTypeXmlContent" name="zj-image" id="100002">
+                <param name="schema">/system/modules/de.zebrajaeger.opencms.example/zj-image/zj-image.xsd</param>
             </type>
         </resourcetypes>
         <explorertypes>
-            <explorertype name="headline" key="fileicon.headline" icon="zj-default.png" bigicon="zj-default-big.png" reference="xmlcontent">
-                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=headline" order="10" autosetnavigation="false" autosettitle="false" info="desc.headline" key="title.headline"/>
+            <explorertype name="zj-headline" key="fileicon.zj-headline" icon="zj-default.jpg" bigicon="zj-default-big.jpg" reference="xmlcontent">
+                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=zj-headline" order="10" autosetnavigation="false" autosettitle="false" info="desc.zj-headline" key="title.zj-headline"/>
             </explorertype>
-            <explorertype name="text" key="fileicon.text" icon="zj-default.png" bigicon="zj-default-big.png" reference="xmlcontent">
-                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=text" order="10" autosetnavigation="false" autosettitle="false" info="desc.text" key="title.text"/>
+            <explorertype name="zj-text" key="fileicon.zj-text" icon="zj-default.jpg" bigicon="zj-default-big.jpg" reference="xmlcontent">
+                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=zj-text" order="10" autosetnavigation="false" autosettitle="false" info="desc.zj-text" key="title.zj-text"/>
             </explorertype>
-            <explorertype name="headline" key="fileicon.image" icon="zj-default.png" bigicon="zj-default-big.png" reference="xmlcontent">
-                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=image" order="10" autosetnavigation="false" autosettitle="false" info="desc.image" key="title.image"/>
+            <explorertype name="zj-image" key="fileicon.zj-image" icon="zj-default.jpg" bigicon="zj-default-big.jpg" reference="xmlcontent">
+                <newresource page="structurecontent" uri="newresource_xmlcontent.jsp?newresourcetype=zj-image" order="10" autosetnavigation="false" autosettitle="false" info="desc.zj-image" key="title.zj-image"/>
             </explorertype>
         </explorertypes>
     </module>

@@ -13,7 +13,7 @@
     <!-- ======================================== TAGS ======================================== -->
     <tag>
         <name>buildInfo</name>
-        <tag-class>com.lv.opencms.basis.buildversion.JspTagProjectInfo</tag-class>
+        <tag-class>de.zebrajaeger.opencms.example.buildversion.JspTagProjectInfo</tag-class>
         <body-content>empty</body-content>
     </tag>
 
@@ -32,11 +32,11 @@
     <!-- ======================================== TAG-FILES ======================================== -->
     <tag-file>
         <name>common-headline</name>
-        <path>/META-INF/tags/zj/common-headline.tag</path>
+        <path>/META-INF/tags/zj/zj-common-headline.tag</path>
     </tag-file>
     <tag-file>
         <name>common-image</name>
-        <path>/META-INF/tags/zj/common-image.tag</path>
+        <path>/META-INF/tags/zj/zj-common-image.tag</path>
     </tag-file>
 
 </taglib>

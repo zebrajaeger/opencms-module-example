@@ -1,0 +1,16 @@
+<XmlVfsBundles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="opencms://system/modules/org.opencms.ade.config/schemas/xmlvfsbundle.xsd">
+    <Bundle language="en">
+        <Message>
+            <Key><![CDATA[label.ZjText.Title]]></Key>
+            <Value><![CDATA[Title]]></Value>
+        </Message>
+        <Message>
+            <Key><![CDATA[label.ZjText.Title.help]]></Key>
+            <Value><![CDATA[Titel of Elements]]></Value>
+        </Message>
+        <Message>
+            <Key><![CDATA[label.ZjText.Text]]></Key>
+            <Value><![CDATA[Text]]></Value>
+        </Message>
+    </Bundle>
+</XmlVfsBundles>

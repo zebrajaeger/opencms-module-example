@@ -1,0 +1,35 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xsd:include schemaLocation="opencms://opencms-xmlcontent.xsd"/>
+    <xsd:include schemaLocation="opencms://system/modules/de.zebrajaeger.opencms.example/common-xsd/zj-common-headline.xsd"/>
+
+    <xsd:element name="ZjHeadlines" type="OpenCmsZjHeadlines"/>
+
+    <xsd:complexType name="OpenCmsZjHeadlines">
+        <xsd:sequence>
+            <xsd:element name="ZjHeadline" type="OpenCmsZjHeadline" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="OpenCmsZjHeadline">
+        <xsd:sequence>
+            <xsd:element name="Title" type="OpenCmsString"/>
+            <xsd:element name="Headline" type="OpenCmsZjCommonHeadline"/>
+        </xsd:sequence>
+        <xsd:attribute name="language" type="OpenCmsLocale" use="required"/>
+    </xsd:complexType>
+
+    <xsd:annotation>
+        <xsd:appinfo>
+            <resourcebundles>
+                <propertybundle name="de.zebrajaeger.opencms.example.zj-headline"/>
+            </resourcebundles>
+            <mappings>
+                <mapping element="Title" mapto="property:Title" />
+                <mapping element="Title" mapto="urlName" />
+            </mappings>
+            <searchsettings containerPageOnly="true"/>
+        </xsd:appinfo>
+    </xsd:annotation>
+
+</xsd:schema>

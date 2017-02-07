@@ -5,43 +5,43 @@
         <!-- ========== Elemente ========== -->
         <!-- Headline -->
         <Message>
-            <Key><![CDATA[fileicon.headline]]></Key>
+            <Key><![CDATA[fileicon.zj-headline]]></Key>
             <Value><![CDATA[Headline]]></Value>
         </Message>
         <Message>
-            <Key><![CDATA[desc.Headline]]></Key>
-            <Value><![CDATA[Headline]]></Value>
+            <Key><![CDATA[desc.zj-headline]]></Key>
+            <Value><![CDATA[zj-headline]]></Value>
         </Message>
         <Message>
-            <Key><![CDATA[title.headline]]></Key>
+            <Key><![CDATA[title.zj-headline]]></Key>
             <Value><![CDATA[Headline]]></Value>
         </Message>
 
         <!-- Text -->
         <Message>
-            <Key><![CDATA[fileicon.text]]></Key>
+            <Key><![CDATA[fileicon.zj-text]]></Key>
             <Value><![CDATA[Text]]></Value>
         </Message>
         <Message>
-            <Key><![CDATA[desc.text]]></Key>
-            <Value><![CDATA[Text]]></Value>
+            <Key><![CDATA[desc.zj-text]]></Key>
+            <Value><![CDATA[zj-text]]></Value>
         </Message>
         <Message>
-            <Key><![CDATA[title.text]]></Key>
+            <Key><![CDATA[title.zj-text]]></Key>
             <Value><![CDATA[Text]]></Value>
         </Message>
 
         <!-- Image -->
         <Message>
-            <Key><![CDATA[fileicon.image]]></Key>
-            <Value><![CDATA[Headline]]></Value>
+            <Key><![CDATA[fileicon.zj-image]]></Key>
+            <Value><![CDATA[Image]]></Value>
         </Message>
         <Message>
-            <Key><![CDATA[desc.Image]]></Key>
-            <Value><![CDATA[Headline]]></Value>
+            <Key><![CDATA[desc.zj-image]]></Key>
+            <Value><![CDATA[zj-image]]></Value>
         </Message>
         <Message>
-            <Key><![CDATA[title.image]]></Key>
+            <Key><![CDATA[title.zj-image]]></Key>
             <Value><![CDATA[Image]]></Value>
         </Message>
 

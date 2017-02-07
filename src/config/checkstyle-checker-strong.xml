@@ -184,14 +184,14 @@
         <!-- See http://checkstyle.sf.net/config_blocks.html -->
         <module name="AvoidNestedBlocks"/>
         <module name="EmptyBlock">
-            <property name="option" value="text"/>
+            <property name="option" value="zj-text"/>
         </module>
         <module name="LeftCurly"/>
         <module name="NeedBraces"/>
         <module name="RightCurly"/>
 
 
-        <!-- Checks for common coding problems               -->
+        <!-- Checks for common-xsd coding problems               -->
         <!-- See http://checkstyle.sf.net/config_coding.html -->
         <module name="AvoidInlineConditionals">
             <property name="severity" value="ignore" />
